@@ -5,7 +5,7 @@
 
 ### Full-Stack Engineer · GenAI · Cloud
 
-I'm a full-stack developer comfortable across the whole software development process — frontend,
+I'm a full-stack developer comfortable across the whole software development process - frontend,
 backend, cloud, and CI/CD. Alongside that I've built a strong understanding of AI systems and the
 engineering behind them, shipping several **chatbots and RAG systems** at my current company.
 
