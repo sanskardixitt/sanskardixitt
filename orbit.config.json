@@ -69,6 +69,10 @@
         [
           "Node.js",
           "backend"
+        ],
+        [
+          "Python",
+          "lang"
         ]
       ]
     },
@@ -76,6 +80,14 @@
       "r": 240,
       "phase": -25,
       "items": [
+        [
+          "LLMs",
+          "ai"
+        ],
+        [
+          "RAG",
+          "ai"
+        ],
         [
           "Next.js",
           "frontend"
@@ -85,8 +97,8 @@
           "backend"
         ],
         [
-          "Python",
-          "lang"
+          "FastAPI",
+          "backend"
         ],
         [
           "PostgreSQL",
@@ -95,10 +107,6 @@
         [
           "MongoDB",
           "backend"
-        ],
-        [
-          "Tailwind",
-          "frontend"
         ]
       ]
     },
@@ -106,6 +114,22 @@
       "r": 304,
       "phase": 12,
       "items": [
+        [
+          "LangChain",
+          "ai"
+        ],
+        [
+          "Fine-tuning",
+          "ai"
+        ],
+        [
+          "Chatbots",
+          "ai"
+        ],
+        [
+          "AI Agents",
+          "ai"
+        ],
         [
           "Docker",
           "cloud"
@@ -115,24 +139,12 @@
           "cloud"
         ],
         [
-          "Kubernetes",
-          "cloud"
-        ],
-        [
-          "LangChain",
-          "ai"
-        ],
-        [
-          "RAG",
-          "ai"
-        ],
-        [
           "Redis",
           "backend"
         ],
         [
-          "FastAPI",
-          "backend"
+          "Tailwind",
+          "frontend"
         ]
       ]
     },
@@ -140,6 +152,14 @@
       "r": 368,
       "phase": -8,
       "items": [
+        [
+          "Vector DBs",
+          "ai"
+        ],
+        [
+          "Kubernetes",
+          "cloud"
+        ],
         [
           "Terraform",
           "cloud"
@@ -167,12 +187,14 @@
         [
           "WebSockets",
           "backend"
-        ],
-        [
-          "Vector DBs",
-          "ai"
         ]
       ]
     }
-  ]
+  ],
+  "avatar": {
+    "focusX": 0.554,
+    "focusY": 0.25,
+    "scale": 1.9,
+    "nudgeY": -6
+  }
 }

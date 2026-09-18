@@ -145,10 +145,29 @@ function avatar() {
 
   const mime = file.endsWith('.png') ? 'image/png' : 'image/jpeg';
   const uri = `data:${mime};base64,${fs.readFileSync(file).toString('base64')}`;
+
+  /* Focal-point crop. A plain centred square crop puts the circle over whatever
+     happens to be at the image's centre -- for a portrait that is usually the
+     torso, not the face. Instead: draw the image at D = diameter * scale, then
+     translate it so the configured focal point lands on the circle's centre
+     (nudged slightly up, where a face sits naturally in a portrait).
+     The clip-path does the rest. */
+  const f = cfg.avatar ?? { focusX: 0.5, focusY: 0.5, scale: 1, nudgeY: 0 };
+  const D = AR * 2 * (f.scale ?? 1);
+  const x0 = CX - (f.focusX ?? 0.5) * D;
+  const y0 = AY + (f.nudgeY ?? 0) - (f.focusY ?? 0.5) * D;
+
+  /* Guard: the scaled image must still cover the whole circle, or we would clip
+     to transparency and punch a hole in the avatar. */
+  if (x0 > CX - AR || y0 > AY - AR || x0 + D < CX + AR || y0 + D < AY + AR) {
+    console.warn(`WARNING: avatar scale ${f.scale} too small for focus ` +
+      `(${f.focusX}, ${f.focusY}) -- the circle is not fully covered. Raise "scale".`);
+  }
+
   /* href only, no xlink:href duplicate -- the fallback would double the file
      size (base64 twice) to support browsers older than Chrome 49 / Safari 12. */
   return (
-    `<image x="${CX - AR}" y="${AY - AR}" width="${AR * 2}" height="${AR * 2}"` +
+    `<image x="${n(x0)}" y="${n(y0)}" width="${n(D)}" height="${n(D)}"` +
     ` clip-path="url(#avatarClip)" preserveAspectRatio="xMidYMid slice"` +
     ` href="${uri}"/>`
   );
