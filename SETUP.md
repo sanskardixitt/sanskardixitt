@@ -20,11 +20,8 @@ git push -u origin main
 
 Then open <https://github.com/sanskardixitt> — the README renders above your pinned repos.
 
-### ⚠️ One thing to know before you push
-
-**The stats cards call `github-readme-stats.vercel.app`**, a third-party service. It's the de facto
-standard for this and only receives your public username, but it is not GitHub. Delete the
-`### Stats` block if you'd rather not depend on it.
+The README deliberately has **no third-party badges or stats cards** — everything it renders is
+served from this repo, so nothing breaks when an external service rate-limits or disappears.
 
 ## Editing the orbit
 

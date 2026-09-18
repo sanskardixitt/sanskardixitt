@@ -131,6 +131,10 @@
           "ai"
         ],
         [
+          "System Design",
+          "backend"
+        ],
+        [
           "Docker",
           "cloud"
         ],
@@ -152,6 +156,10 @@
       "r": 368,
       "phase": -8,
       "items": [
+        [
+          "Agent Orchestration",
+          "ai"
+        ],
         [
           "Vector DBs",
           "ai"
@@ -192,9 +200,9 @@
     }
   ],
   "avatar": {
-    "focusX": 0.554,
-    "focusY": 0.25,
-    "scale": 1.9,
-    "nudgeY": -6
+    "focusX": 0.5,
+    "focusY": 0.5,
+    "scale": 1.0,
+    "nudgeY": 0
   }
 }
