@@ -1,0 +1,178 @@
+{
+  "name": "Sanskar Dixit",
+  "handle": "@sanskardixitt",
+  "role": "Full-Stack Engineer",
+  "footer": "React · Node · Python · AWS — building RAG pipelines and systems that stay up.",
+  "canvas": {
+    "w": 900,
+    "h": 580,
+    "cx": 450,
+    "cy": 270
+  },
+  "system": {
+    "tiltDeg": -14,
+    "squash": 0.56,
+    "basePeriod": 22
+  },
+  "palette": {
+    "bgTop": "#1E1B33",
+    "bgBottom": "#14131F",
+    "ring": "#C9C2F0",
+    "text": "#E7E3F7",
+    "textDim": "#9E98C4",
+    "halo": "#2A2647"
+  },
+  "domains": [
+    {
+      "key": "lang",
+      "label": "Languages",
+      "color": "#FFD9A0"
+    },
+    {
+      "key": "frontend",
+      "label": "Frontend",
+      "color": "#A8D8FF"
+    },
+    {
+      "key": "backend",
+      "label": "Backend & Data",
+      "color": "#A8E6CF"
+    },
+    {
+      "key": "cloud",
+      "label": "Cloud & DevOps",
+      "color": "#C3B5F5"
+    },
+    {
+      "key": "ai",
+      "label": "AI / GenAI",
+      "color": "#F7B2D9"
+    }
+  ],
+  "rings": [
+    {
+      "r": 176,
+      "phase": 18,
+      "items": [
+        [
+          "JavaScript",
+          "lang"
+        ],
+        [
+          "TypeScript",
+          "lang"
+        ],
+        [
+          "React",
+          "frontend"
+        ],
+        [
+          "Node.js",
+          "backend"
+        ]
+      ]
+    },
+    {
+      "r": 240,
+      "phase": -25,
+      "items": [
+        [
+          "Next.js",
+          "frontend"
+        ],
+        [
+          "Express",
+          "backend"
+        ],
+        [
+          "Python",
+          "lang"
+        ],
+        [
+          "PostgreSQL",
+          "backend"
+        ],
+        [
+          "MongoDB",
+          "backend"
+        ],
+        [
+          "Tailwind",
+          "frontend"
+        ]
+      ]
+    },
+    {
+      "r": 304,
+      "phase": 12,
+      "items": [
+        [
+          "Docker",
+          "cloud"
+        ],
+        [
+          "AWS",
+          "cloud"
+        ],
+        [
+          "Kubernetes",
+          "cloud"
+        ],
+        [
+          "LangChain",
+          "ai"
+        ],
+        [
+          "RAG",
+          "ai"
+        ],
+        [
+          "Redis",
+          "backend"
+        ],
+        [
+          "FastAPI",
+          "backend"
+        ]
+      ]
+    },
+    {
+      "r": 368,
+      "phase": -8,
+      "items": [
+        [
+          "Terraform",
+          "cloud"
+        ],
+        [
+          "GitHub Actions",
+          "cloud"
+        ],
+        [
+          "Nginx",
+          "cloud"
+        ],
+        [
+          "Vue.js",
+          "frontend"
+        ],
+        [
+          "Prisma",
+          "backend"
+        ],
+        [
+          ".NET Core",
+          "backend"
+        ],
+        [
+          "WebSockets",
+          "backend"
+        ],
+        [
+          "Vector DBs",
+          "ai"
+        ]
+      ]
+    }
+  ]
+}
